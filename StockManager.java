@@ -66,8 +66,13 @@ public class StockManager
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
-    public int numberInStock(int id)
+    public int numberInStock(int id)//q1
     {
+         Product product = findProduct(id);
+
+    if (product != null) {
+        return product.getQuantity();
+    }
         return 0;
     }
 
