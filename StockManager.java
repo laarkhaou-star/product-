@@ -49,7 +49,7 @@ public class StockManager
      * @return The identified product, or null if there is none
      *         with a matching ID.
      */
-    public Product findProduct(int id)
+    public Product findProduct(int id)//q1
     {
         for (Product product : stockList){
             if (product.getID() == id) {
