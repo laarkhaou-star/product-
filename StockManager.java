@@ -35,7 +35,7 @@ public class StockManager
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void delivery(int id, int amount)//q1
+    public void delivery(int id, int amount)//q4
     {
         Product product = findProduct(id);
 
@@ -49,7 +49,7 @@ public class StockManager
      * @return The identified product, or null if there is none
      *         with a matching ID.
      */
-    public Product findProduct(int id)//q1
+    public Product findProduct(int id)//q2
     {
         for (Product product : stockList){
             if (product.getID() == id) {
@@ -66,7 +66,7 @@ public class StockManager
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
-    public int numberInStock(int id)//q1
+    public int numberInStock(int id)//q3
     {
          Product product = findProduct(id);
 
